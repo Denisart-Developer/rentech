@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/iconfonts.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проект</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__container _container">
+        <!-- Логотип -->
+        <div class="header__logo"><a href=""><img src="../img/logo.svg" alt="logo"></a></div>
+        <!-- Бургер -->
+        <div class="header__menu-burger">
+            <div class="burger-menu">
+                <button type="button" class="menu__icon icon-menu"><span></span></button>
+            </div> 
+        </div>
+        <!-- Навигация сайта -->
+        <nav class="header__navigation navigation-header">
+            <ul class="navigation-header__menu menu-catalog">
+                <!-- Пункты с выпадающим меню -->
+                <li data-sub class="menu-catalog__item">
+                    <!-- Класс _icon-arrow (иконочный шрифт добавляет стрелку) -->
+                    <a class="menu-catalog__link _icon-arrow" href="">Каталог техники</a>
+                    <!-- Выпадающее меню -->
+                    <div class="menu-catalog__dropmenu dropmenu-catalog">
+                        <ul class="dropmenu-catalog__list">
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Гусеничные эксковаторы</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Колёсные эксковаторы</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Мини эксковаторы</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Эксковаторы-погрузчики</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Фронтальные погрузчики</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Мини-погрузчики</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Вилочные погрузчики</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Телескопические погрузчики</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Подъёмники</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Компрессоры</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Автовышки</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Автокраны</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Поливомоечные машины</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Башенные краны</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Гусеничные краны</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Манипуляторы</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Лесовозы</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Самосвалы</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Автобетоносмесители</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Длинномеры</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Тралы</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Тонары</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Мусоровозы</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Автобетононасосы</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Илососы</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Катки</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Бульдозеры</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Грейдеры</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Асфальтоукладчики</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Дорожные фрезы</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Гидромолоты</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Ямобуры</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Буровые установки</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Эвакуаторы</a></li>
+                        </ul>
+                    </div>
+                    
+                </li>
+                <li data-sub class="menu-catalog__item">
+                    <a class="menu-catalog__link _icon-arrow" href="">Услуги</a>
+                    <!-- Выпадающее меню -->
+                    <div class="menu-catalog__dropmenu dropmenu-catalog">
+                        <ul class="dropmenu-catalog__list">
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Продажа песка</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Продажа щебня</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Асфальтирование</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Вывоз грунта</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Вывоз мусора</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Уборка снега</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Перевозка мусора</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li data-sub class="menu-catalog__item">
+                    <a class="menu-catalog__link _icon-arrow" href="">О компании</a>
+                    <!-- Выпадающее меню -->
+                    <div class="menu-catalog__dropmenu dropmenu-catalog">
+                        <ul class="dropmenu-catalog__list">
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Продажа песка</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Продажа щебня</a></li>
+                            <li class="dropmenu-catalog__item"><a class="dropmenu-catalog__link" href="">Асфальтирование</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- Обычные пункты -->
+                <li class="menu-catalog__item"><a class="menu-catalog__link" href="#">Контакты</a></li>
+            </ul>
+            <!-- Поиск -->
+            <form class="navigation-header__search" action="" method="get">
+                <input name="search" placeholder="Поиск" type="text">
+                <button class="navigation-header__btn-search" type="submit"><img src="../img/icon/search.png" alt="картинка"></button>
+            </form>
+            <!-- Номер телефона -->
+            <div class="navigation-header__phone"><a href="tel:79999999999">+7 (999) 999-99-99</a></div>
+        </nav>
+    </div>
+</header>
+        <main class="main">
+            <!-- Анимированый блок -->
+            <div class="animation-block-header">
+                <div class="animation-block-header__container">
+                    <div class="animation-block-header__content">
+                        <div class="animation-block-header__item">
+                            <div class="animation-block-header__image"><img src="img/header-animation-block/item1.png" alt=""></div>
+                            <div class="animation-block-header__background active"></div>
+                            <div class="animation-block-header__mouseover"></div>
+                        </div>
+                        <div class="animation-block-header__item">
+                            <div class="animation-block-header__image"><img src="img/header-animation-block/item2.png" alt=""></div>
+                            <div class="animation-block-header__background"></div>
+                            <div class="animation-block-header__mouseover"></div>
+                        </div>
+                        <div  class="animation-block-header__item">
+                            <div class="animation-block-header__image"><img src="img/header-animation-block/item3.png" alt=""></div>
+                            <div class="animation-block-header__background"></div>
+                            <div class="animation-block-header__mouseover"></div>
+                        </div>
+                        <div class="animation-block-header__item">
+                            <div class="animation-block-header__image"><img src="img/header-animation-block/item4.png" alt=""></div>
+                            <div class="animation-block-header__background"></div>
+                            <div class="animation-block-header__mouseover"></div>
+                        </div>
+                        <div class="animation-block-header__top-image">
+                            <img class="animation-block-header__buldozer-image active" src="img/header-animation-block/buldozer.png" alt="картинка">
+                        </div>
+                        <div class="animation-block-header__top-image">
+                            <img class="animation-block-header__katok-image" src="img/header-animation-block/katok.png" alt="картинка">
+                        </div>
+                        <div class="animation-block-header__top-image">
+                            <img class="animation-block-header__pogruzchik-image" src="img/header-animation-block/pogruzchik.png" alt="картинка">
+                        </div>
+                        </div>
+                            
+                </div>
+            </div>
+            <!-- Главная секция -->
+            <section class="present">
+                <div class="present__container">
+                    <h1 class="present__title">Аренда спецтехники <br>для любых видов работ <br>в Москве и Москвосвкой области</h1>
+                    <div class="present__text">
+                        <p>Техника с водителем, на любой срок.</p>
+                        <p>Выполнение любых видов работ: строительство, демонтаж зданий, корьерные работы, вывоз снега, ландшафтные работы и многое другое…</p>
+                    </div>
+                    <div class="present__buttons buttons-double">
+                        <div class="buttons-double__button-one"><a href="">В КАТАЛОГ</a></div>
+                        <div class="buttons-double__button-two"><a href="#form">СВЯЗАТЬСЯ</a></div>
+                    </div>
+                </div>
+            </section>
+            <!-- О нас -->
+            <section class="about ">
+                <div class="about__container _container _coube_left ">
+                    <h2 class="about__title anim-items">О нас</h2>
+                    <div class="about__content ">
+                        <div class="about__text anim-items">
+                            <p>Компания «Русавтострой», уже более 10 лет оказывает услуги по аренде специализированной техники в Москве и Московской области.</p>
+                            <p>Компания обладает большим автопарком техники для различных видов работ. С каждым годом, количество техники и предоставляемых услуг только растёт.</p>
+                            <p>Компания «Русавтострой» имеет продвинутую техническую базу, которая позволяет своевременно и качественно производить обслуживание и ремонт техники, что минимизирует риски связанные с возможными неисправностями во время проведения работ.</p>
+                            <p>Нашим преимуществом, является индивидуальный подход к каждому клиенту. Достаточно просто оставить заявку, а наши менеджеры найдут решение вашей задачи!</p>
+                        </div>
+                        <div class="about__image image-about _trace-1_right anim-items">
+                            <div class="image-about__background anim-items">
+                                <img src="img/about/Image.png" alt="картинка">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Категории техники -->
+            <section class="category-technic ">
+                <div class="category-technic__container _container">
+                    <h2 class="category-technic__title">Каталог спецтехники</h2>
+                    <div class="category-technic__text">
+                        <p>Все виды техники, на любой случай!</p>
+                        <p>Автопарк, который закроет любые потребности.</p>
+                    </div>
+                    <div class="category-technic__content _coube_left _coube_right">
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/excovator.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Гусеничные эксковаторы</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/whels-excovator.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Колёсные эксковаторы</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/mini-excovator.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Мини эксковаторы</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/pogruzchik.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Эксковаторы-погрузчики</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/front-pogruzchik.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Фронтальные погрузчики</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/mini-pogruzchik.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Мини-погрузчики</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/vil-pogruzchik.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Вилочные погрузчики</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/telescop-pogruzchik.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Телескопические погрузчики</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/podemnik.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Подъёмники</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/compressor.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Компрессоры</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/avtovischka.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Автовышки</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/avtokran.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Автокраны</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/avtobetononasos.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Автобетононасосы</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/basheniy-kran.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Башенные краны</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/gus-kran.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Гусеничные краны</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/manipulator.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Манипуляторы</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/lesovoz.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Лесовозы</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/samosval.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Самосвалы</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/avtobetonosmes.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Автобетоносмесители</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/dlinomer.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Длинномеры</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/tral.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Тралы</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/tonar.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Тонары</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/musorovoz.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Мусоровозы</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/polivomoechnye.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Поливомоечные машины</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/ilosos.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Илососы</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/katki.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Катки</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/buldozer.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Бульдозеры</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/greider.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Грейдеры</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/asfaltoukladchik.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Асфальтоукладчики</div>
+                        </a>
+                        <a href="" class="category-technic__item item-categoty-technic">
+                            <div class="item-categoty-technic__image"><img src="img/icon-technic/dorozhnay-freza.png" alt=""></div>
+                            <div class="item-categoty-technic__text">Дорожные фрезы</div>
+                        </a>
+                    </div>
+                    <div class="category-technic__button button-catalog"><a href="#">Перейти в каталог</a></div>  
+                </div>
+                <div class="category-technic__advantages advantages-block">
+                    <div class="advantages-block__container _container">
+                        <div class="advantages-block__item anim-items">
+                            <div class="advantages-block__number">01</div>
+                            <div class="advantages-block__icon"><img src="img/icon-svg/human.svg" alt="иконка"></div>
+                            <div class="advantages-block__text">Оператор и ГСМ включены в стоимость</div>
+                        </div>
+                        <div class="advantages-block__item anim-items">
+                            <div class="advantages-block__number">02</div>
+                            <div class="advantages-block__icon"><img src="img/icon-svg/list-advantages.svg" alt="иконка"></div>
+                            <div class="advantages-block__text">Своевременное и квалифицированное обслуживание техники</div>
+                        </div>
+                        <div class="advantages-block__item anim-items">
+                            <div class="advantages-block__number">03</div>
+                            <div class="advantages-block__icon"><img src="img/icon-svg/geo-advantages.svg" alt="иконка"></div>
+                            <div class="advantages-block__text">Доставка техники в любой район Москвы и МО</div>
+                        </div>
+                        <div class="advantages-block__item anim-items">
+                            <div class="advantages-block__number">04</div>
+                            <div class="advantages-block__icon"><img src="img/icon-svg/rub-advantages.svg" alt="иконка"></div>
+                            <div class="advantages-block__text">Понятные и выгодные тарифы</div>
+                        </div>
+                        <div class="advantages-block__item anim-items">
+                            <div class="advantages-block__number">05</div>
+                            <div class="advantages-block__icon"><img src="img/icon-svg/document-advantages.svg" alt="иконка"></div>
+                            <div class="advantages-block__text">Правильный документооборот</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-technic__text-block block-text-category">
+                    <div class="block-text-category__container _container">
+                        <div class="block-text-category__title">Аренда строительной техники — почему арендовать технику выгодно?</div>
+                        <div class="block-text-category__text">
+                            Сфера строительства в Москве и Московской области всегда была и остаётся одной из наиболее стремительно развивающихся, вне зависимости 
+                            от масштаба объектов. Чтобы бизнес в этом сегменте рынка был рентабельным и выгодным, необходимо быстрое и качественное выполнение
+                            всех работ, которые невозможно осуществлять без соответствующей современной спецтехники.
+                            Компаниям, занимающимся строительством, в большинстве случаев невыгодно содержать свой автопарк строительной техники. Гораздо проще 
+                            и рентабельнее взять необходимую технику в аренду. Особенно этот вопрос актуален для небольших строительных организаций 
+                            или тех компаний, которым спецтехника необходима для непостоянных, разовых работ.
+                        </div>
+                        <div class="block-text-category__title">Основные выгоды аренды строительной спецтехники:</div>
+                        <div class="block-text-category__text">
+                            <ul class="block-text-category__list">
+                                <li class="block-text-category__point">Экономия бюджета на приобретение техники. Даже покупка устаревшей спецтехники — это немалые денежные вложения, которые лучше потратить для развитие бизнеса.</li>
+                                <li class="block-text-category__point">Отсутствие расходов на обслуживание и ремонт. Содержать свой автопарк — это дорогое и хлопотное мероприятие. Кроме того, для ремонта и обслуживания требуются дорогостоящие запчасти и расходные материалы. В случае аренды техники у нас, все эти затраты мы берём на себя!</li>
+                                <li class="block-text-category__point">Нет необходимости содержать штат водителей, операторов и механиков. Это дополнительные штатные единицы, которые будут являться дополнительной нагрузкой на бюджет компании.</li>
+                                <li class="block-text-category__point">Возможность арендовать самую передовую технику, что позволит выполнять работы эффективней, быстрее и качественней, без изменения сроков и договорённостей.</li>
+                                <li class="block-text-category__point">Выбирая услугу аренды спецтехники, нет необходимости выделять и обустраивать площадки для стоянки техники</li>
+                            </ul>
+                            <p>
+                                Даже если вы имеете свой автопарк спецтехники, то как и у любой техники, у неё могу возникать неисправности. А это ведёт к простою в работе, не соблюдению сроков и штрафным санкциям.
+                                Аренда спецтехники в моске с экипажем — самый выгодный и простой выход из ситуации. Если у вас есть потребность в аренде техники на длительный срок, то вы можете рассчитывать на индивидуальные условия, в виде скидки или бесплатной доставки техники на объект.
+                                Если вы стремитесь к тому, чтобы ваша компания активно росла и стабильно развивалась, то самое разумное и выгодное — аренда спецтехники в РУСАВТОСТРОЙ. Наша компания готова предложить выгодные условия сотрудничество и может гарантировать исполнение всех взятых на себя обязательств.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+             <!-- Техника парка  -->
+            <section class="technic-park">
+                <div class="technic-park__container _container">
+                   <h2 class="technic-park__title">Техника парка</h2> 
+                </div>
+                <div class="technic-park__image">
+                    <div class="technic-park__background">
+                        <div class="technic-park__brands"></div>
+                    </div>
+                </div>
+            </section> 
+            <!-- Услуги -->
+            <section class="services">
+                <div class="services__container _container _coube_right">
+                    <h2 class="services__title">Услуги</h2>
+                    <div class="services__text">
+                        Кроме аренды техники, компания «Русавтострой» готова предложить большой 
+                        ассортимент комплексных услуг, начиная от доставки песка и щебня, заканчивая сносом 
+                        зданий и разработкой котлованов. Полный перечень услуг в каталоге нашего сайта!
+                    </div>
+                    <div class="services__content ">
+                        <div class="services__slider slider-services">
+                            <div class="slider-services__container">
+                                <div class="slider-services__wrapper swiper-wrapper">
+                                    <div class="slider-services__slide swiper-slide">
+                                        <a href="#" class="slider-services__slide slide-services">
+                                            <div class="slide-services__image-container">
+                                                <img class="slide-services__image" src="img/services/pesok.jpg" alt="картинка">
+                                            </div>
+                                            <div class="slide-services__text">Продажа песка</div>
+                                        </a>
+                                    </div>
+                                    <div class="slider-services__slide swiper-slide">
+                                        <a href="#" class="slider-services__slide slide-services">
+                                            <div class="slide-services__image-container">
+                                                <img class="slide-services__image" src="img/services/sheben.jpg" alt="картинка">
+                                            </div>
+                                            <div class="slide-services__text">Продажа щебня</div>
+                                        </a>
+                                    </div>
+                                    <div class="slider-services__slide swiper-slide">
+                                        <a href="#" class="slider-services__slide slide-services">
+                                            <div class="slide-services__image-container">
+                                                <img class="slide-services__image" src="img/services/asfalt.jpg" alt="картинка">
+                                            </div>
+                                            <div class="slide-services__text">Асфальтирование</div>
+                                        </a>
+                                    </div>
+                                    <div class="slider-services__slide swiper-slide">
+                                        <a href="#" class="slider-services__slide slide-services">
+                                            <div class="slide-services__image-container">
+                                                <img class="slide-services__image" src="img/services/grunt-vyvoz.jpg" alt="картинка">
+                                            </div>
+                                            <div class="slide-services__text">Вывоз грунта</div>
+                                        </a>
+                                    </div>
+                                    <div class="slider-services__slide swiper-slide">
+                                        <a href="#" class="slider-services__slide slide-services">
+                                            <div class="slide-services__image-container">
+                                                <img class="slide-services__image" src="img/services/musor-vyvoz.jpg" alt="картинка">
+                                            </div>
+                                            <div class="slide-services__text">Вывоз мусора</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slider-services__button-next"></div>
+                                <div class="slider-services__button-prev"></div>
+                            </div>
+                        </div>
+                        <a href="#" class="services__button button-catalog">Перейти в каталог</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Форма -->
+            <form id="form" class="form" action="#">
+                <div class="form__container _container">
+                    <div class="form__text-block">
+                        <div class="form__title">Оставить заявку</div>
+                        <div class="form__text">
+                            Если у вас появились вопросы или требуется помощь 
+                            в выборе техники. Оставьте заявку, и наши
+                            менеджеры свяжутся с вами в течении 10 минут. 
+                            Мы всегдя на связи!
+                        </div>
+                    </div>
+                    <div class="form__input-block anim-items">
+                        <div class="form__placeinput">
+                            <div class="form__background-input">
+                                <input data-input class="form__input" maxlength="15" type="text" placeholder="" name="name"/>
+                            </div>
+                            <div data-placeholder class="form__placeholder">Имя<span>*</span></div>
+                        </div>
+                        <div class="form__placeinput">
+                            <div class="form__background-input">
+                                <input data-input class="form__input" maxlength="15" type="tel" placeholder="" name="phone"/>
+                            </div>
+                            <div data-placeholder class="form__placeholder">Телефон<span>*</span></div>
+                        </div>
+                        <div class="form__placeinput _icon-arrow">
+                            <input class="form__input-select" maxlength="100" type="button" value="Тип техники" name="technic"/>
+                            <ul class="form__select-list">
+                                <li class="form__select-item">Гусеничные эксковаторы</li>
+                                <li class="form__select-item">Колёсные эксковаторы</li>
+                                <li class="form__select-item">Мини эксковаторы</li>
+                                <li class="form__select-item">Эксковаторы-погрузчики</li>
+                                <li class="form__select-item">Фронтальные погрузчики</li>
+                                <li class="form__select-item">Мини-погрузчики</li>
+                                <li class="form__select-item">Вилочные погрузчики</li>
+                                <li class="form__select-item">Телескопические погрузчики</li>
+                                <li class="form__select-item">Подъёмники</li>
+                                <li class="form__select-item">Компрессоры</li>
+                                <li class="form__select-item">Автовышки</li>
+                                <li class="form__select-item">Автокраны</li>
+                                <li class="form__select-item">Автобетоносмесители</li>
+                                <li class="form__select-item">Автобетононасосы</li>
+                                <li class="form__select-item">Башенные краны</li>
+                                <li class="form__select-item">Гусеничные краны</li>
+                                <li class="form__select-item">Манипуляторы</li>
+                                <li class="form__select-item">Лесовозы</li>
+                                <li class="form__select-item">Самосвалы</li>
+                                <li class="form__select-item">Длинномеры</li>
+                                <li class="form__select-item">Тралы</li>
+                                <li class="form__select-item">Мусоровозы</li>
+                                <li class="form__select-item">Поливомоечные машины</li>
+                                <li class="form__select-item">Илососы</li>
+                                <li class="form__select-item">Катки</li>
+                                <li class="form__select-item">Бульдозеры</li>
+                                <li class="form__select-item">Грейдеры</li>
+                                <li class="form__select-item">Асфальтоукладчики</li>
+                                <li class="form__select-item">Дорожные фрезы</li>
+                            </ul>
+                        </div>
+                        <div class="form__check check-form">
+                            <div class="check-form__icon"></div>
+                            <div class="check-form__text">Согласен на обработку данных</div>
+                        </div>
+                        <button type="button" class="form__button">ОТПРАВИТЬ</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer class="footer">
+    <div class="footer__container _container">
+        <div class="footer__contants-column">
+            <div class="footer__row-contacts">
+                <!-- Логотип -->
+                <div class="footer__logo"><a href="index.html"><img src="../img/logo.svg" alt="logo"></a></div>
+                <!-- Ссылки на соцсети -->
+                <div class="footer__social social">
+                    <div class="social__telegramm"><a href="#"><img src="../img/icon-svg/telegram.svg" alt="иконка"></a></div>
+                    <div class="social__whatsap"><a href="#"><img src="../img/icon-svg/whatsap.svg" alt="иконка"></a></div>
+                    <div class="social__viber"><a href="#"><img src="../img/icon-svg/viber.svg" alt="иконка"></a></div>
+                    <div class="social__vkontakte"><a href="#"><img src="../img/icon-svg/vkontakte.svg" alt="иконка"></a></div>
+                </div>
+            </div>
+            <div class="footer__button">Заказать обратный звонок</div>
+            <div class="footer__copyright">Все права защищены © Русавтострой 2022</div>
+        </div>
+        <div class="footer__row">
+            <div class="footer__company-column">
+                <div class="footer__title _icon-arrow">КОМПАНИЯ</div>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" href="#">О компании</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Правила аренды</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Партнёрство</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Реквизиты</a></li>
+                </ul>
+            </div>
+            <div class="footer__technic-column">
+                <div class="footer__title _icon-arrow">ТЕХНИКА</div>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" href="#">Гусеничные эксковаторы</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Колёсные эксковаторы</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Мини эксковаторы</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Эксковаторы-погрузчики</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Фронтальные погрузчики</a></li>
+                </ul>
+                <a class="footer__link-catalog" href="#">Перейти в каталог</a>
+            </div>
+            <div class="footer__services-column">
+                <div class="footer__title _icon-arrow">УСЛУГИ</div>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" href="#">Продажа песка</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Продажа щебня</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Асфальтирование</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Вывоз грунта</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Вывоз мусора</a></li>
+                </ul>
+                <a class="footer__link-catalog" href="#">Перейти в каталог</a>
+            </div>
+        </div>
+        
+    </div>
+</footer>
+    </div>
+    <!-- подключаем swiper(Слайдер) -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- подключаем js -->
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>
