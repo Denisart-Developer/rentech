@@ -1922,6 +1922,18 @@ h2::before {
     background-color: #FFFFFF;
   }
 
+  .technic-park__image::before {
+    left: -50px;
+  }
+
+  .technic-park__image::after {
+    right: -87px;
+  }
+
+  .technic-park__background {
+    max-width: 1240px;
+  }
+
   .services__container {
     max-width: 1200px;
   }
@@ -2006,18 +2018,6 @@ h2::before {
   .category-technic__content {
     max-width: 1185px;
     margin: 0 auto;
-  }
-
-  .technic-park__image::before {
-    left: -50px;
-  }
-
-  .technic-park__image::after {
-    right: -87px;
-  }
-
-  .technic-park__background {
-    max-width: 1120px;
   }
 }
 
