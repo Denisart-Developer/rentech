@@ -1090,7 +1090,7 @@ h2::before {
   background-size: auto;
   width: 100%;
   height: 100px;
-  transform: translate(100%, 0);
+  transform: translate(110%, 0);
 }
 
 @-webkit-keyframes marquee {
@@ -1099,7 +1099,7 @@ h2::before {
   }
 
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-110%);
   }
 }
 
@@ -1109,7 +1109,7 @@ h2::before {
   }
 
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-110%);
   }
 }
 
@@ -2653,13 +2653,11 @@ h2::before {
     width: 550px;
     height: 40px;
     background-size: contain;
-    margin: 0 10px 0 0;
   }
 
   .technic-park__brands::after {
     height: 40px;
     background-size: contain;
-    margin: 0 0 0 10px;
   }
 
   .form__container {
@@ -2726,11 +2724,16 @@ h2::before {
     width: 100%;
   }
 
+  .category-technic__text {
+    font-size: 16px;
+  }
+
   .item-categoty-technic {
     font-size: 18px;
   }
 
   .technic-park__brands {
+    width: 550px;
     height: 50px;
   }
 
@@ -2752,6 +2755,14 @@ h2::before {
   .image-about__background::after {
     left: -15px;
     bottom: -20px;
+  }
+
+  .technic-park__title {
+    font-size: 28px;
+  }
+
+  .services__title {
+    font-size: 28px;
   }
 }
 
