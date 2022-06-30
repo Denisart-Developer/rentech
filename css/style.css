@@ -1747,7 +1747,9 @@ h2::before {
     left: auto;
     margin: 0 0 0 455px;
   }
+}
 
+@media (min-width: 1601px) {
   .slider-services__container {
     max-width: 1440px;
   }
@@ -1930,6 +1932,10 @@ h2::before {
 
   .slider-services__button-prev {
     left: -20px;
+  }
+
+  .form__container {
+    justify-content: start;
   }
 
   .form__text-block {
@@ -2182,6 +2188,10 @@ h2::before {
 
   .category-technic__content::after {
     top: 35%;
+  }
+
+  .form__container {
+    justify-content: center;
   }
 
   .footer__contants-column {
