@@ -1988,8 +1988,12 @@ h2::before {
     width: 400px;
   }
 
+  .animation-block-header__katok-image {
+    min-width: 410px;
+  }
+
   .animation-block-header__pogruzchik-image {
-    min-width: 490px;
+    min-width: 500px;
   }
 
   .animation-block-header__background {
@@ -2005,7 +2009,7 @@ h2::before {
   }
 
   .present__title {
-    font-size: 34px;
+    font-size: 36px;
   }
 
   .present__text {
@@ -2139,7 +2143,7 @@ h2::before {
 
 @media (max-width: 1370px) {
   .present__title {
-    font-size: 30px;
+    font-size: 34px;
   }
 
   .present__text {
@@ -2243,6 +2247,18 @@ h2::before {
 
   .animation-block-header__mouseover {
     width: 182px;
+  }
+
+  .present__container {
+    height: 510px;
+  }
+
+  .present__title {
+    font-size: 30px;
+  }
+
+  .present__text {
+    margin: 30PX 0 0 0;
   }
 }
 
