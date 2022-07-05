@@ -215,7 +215,7 @@ selectForm.addEventListener('click', function(){
 for (let index = 0; index < selectItems.length; index++) {
   const selectItem = selectItems[index];
   selectItem.addEventListener("click", function(){
-    selectForm.value = selectItem.innerHTML;
+    selectForm.innerHTML = selectItem.innerHTML;
     selectList.classList.remove("open");
     for (let index = 0; index < placeinputs.length; index++) {
       const placeinput = placeinputs[index];
